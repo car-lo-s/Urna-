@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <section class="urna">
+        <div class="tela">
+            <div class="tela-dado">
+                <div class="tela-esquerda">
+                    <div class="tela-voto">
+                        <p>SEU VOTO PARA: </p>
+                    </div>
+                    <div class="tela-resultado">
+                        <p>VEREADOR</p>
+                    </div>
+                    <div class="tela-numero">
+                        <div class="numeros pisca"></div>
+                        <div class="numeros"></div>
+                    </div>
+                    <div class="tela-pessoa"> carlos bla bla bla <br>
+                        teste teste
+
+                    </div>
+                </div>
+                <div class="tela-direita">
+                    <div class="direita-img">
+                        <img src="./images/84.jpg" alt="">
+                        prefeito
+                    </div>
+                    <div class="direita-img small">
+                        <img src="./images/84.jpg" alt="">
+                        Vice-prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="tela-info">
+                Aperte para: <br>
+                CONFIRMA para CONFIRMAR este voto <br>
+                CORRIGE  para REINICIAR  este  voto
+            </div>
+        </div>
+        <div class="gp-btn">
+            <div class="ln-btn">
+                <div class="btn" onclick="valor('1')">1</div>
+                <div class="btn" onclick="valor('2')">2</div>
+                <div class="btn" onclick="valor('3')">3</div>
+            </div>
+            <div class="ln-btn">
+                <div class="btn" onclick="valor('4')">4</div>
+                <div class="btn" onclick="valor('5')">5</div>
+                <div class="btn" onclick="valor('6')">6</div>
+            </div>
+            <div class="ln-btn">
+                <div class="btn" onclick="valor('7')">7</div>
+                <div class="btn" onclick="valor('8')">8</div>
+                <div class="btn" onclick="valor('9')">9</div>
+            </div>
+            <div class="ln-btn">
+                <div class="btn" onclick="valor('0')">0</div>
+            </div>
+            <div class="ln-btn">
+                <div class="btn branco" onclick="branco()">BRANCO</div>
+                <div class="btn corrige" onclick="corrige()">CORRIGE</div>
+                <div class="btn confirma" onclick="confirma()">CONFIRMA</div>
+            </div>
+        </div>
+    </section>
+    <script src="./etapas.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
