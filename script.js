@@ -12,8 +12,8 @@ function comeco(){
     let processo = etapas[estagio]
     seuVoto.innerHTML = ''
     descricao.innerHTML=''
-    aviso.innerHTML=''
-    foto.innerHTML = ''
+    aviso.style.display = 'none'
+    foto.style.display = 'none'
 
     if(estagio === 0){
         cargo.innerHTML = processo.titulo
@@ -46,7 +46,26 @@ function valor(n){
 }
 
 function atualiza(){
-    alert(etapas.length)
+    let verifica = 0;
+    let processo = etapas[estagio]
+    let j = 0;
+    
+    etapas.map(function(nome,i){
+        if(nome.numeros === 5){
+            while(j<nome.candidatos.length){
+                alert("Vereador: "+nome.candidatos[j].fotos[0].url)
+                j++
+            } 
+        }else if(nome.numeros === 2){
+            while(j<nome.candidatos.length){
+                alert("Prefeito: "+nome.candidatos[j].fotos[0].url)
+            alert("Vice-Prefeito: "+nome.candidatos[j].fotos[1].url)
+            j++
+            }
+        }
+        j = 0
+    })
+   
 }
 
 function branco(){
